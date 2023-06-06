@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div>
+            <div class="titlebg">      
+                <img src="img/odin-lined.png" alt="Odin logo" style="width: 7vw;">
+                <p class="title">ODIN</p>
+            </div>
+            <p class="credits">Photo by <a href="https://unsplash.com/pt-br/fotografias/25xggax4bSA">Halie West</a> on <a href="https://unsplash.com/pt-br">Unsplash</a> </p>
+        </div>
+        <div>
+            <img class="teste" src="img/halie-west-25xggax4bSA-unsplash.jpg" alt="Forest image" style="width:40vw; height: 100vh;">
+        </div>
+    </div>
+
+    <div class="rightside">
+        <div>
+            <p class="paragraph">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+            Sign up now to get started.
+            </p>
+            <p class="paragraphtwo">You <i>know</i> you want to.</p>
+        </div>
+    <form action='' method='post' id="create">
+    <fieldset>    
+        <div class="form">
+            <p class="form-title">Let's do this!</p>
+            <div class="input">
+                <label for='first-name'>First Name</label>
+                <input id='first-name' name='first-name' type='text' placeholder='Gabriel' required/>
+            </div>
+            <div class="input">
+                <label for='last-name'>Last Name </label>
+                <input id='last-name' name='last-name' type='text' placeholder='Silva' required/>
+            </div>
+            <div class="input">
+                <label for='email'>Email</label>
+                    <input id='email'
+                        name='email'
+                        type='email'
+                        placeholder='joe@example.com' required/>
+            </div>
+            <div class="input">                  
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="98262-4041" pattern="[0-9]{5}-[0-9]{4}" required>
+            </div>
+            <div class="input">
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd" required>
+            </div>
+            <div class="input">
+                <label for="confirmpwd">Confirm password:</label>
+                <input type="password" id="confirmpwd" name="confirmpwd" required onkeyup='check()'>
+            </div>
+            
+        </div>
+        <div class="submit">
+            <button type="submit" form="create" value="Submit">Submit</button>
+            <p>Already have an account? <a class="login" href="">Log in</a></p>
+        </div>
+    </fieldset>
+    </form>
+    </div>
+    <script src="script.js">  </script>
+</body>
+</html>

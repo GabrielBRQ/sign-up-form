@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "odin";
+    src: url("fonts/norse-bold-webfont.woff2") format("woff2"), 
+    url("fonts/norse-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto/Roboto-Medium.ttf) format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    display: flex;
+}
+
+img{
+    display: block;
+}
+/* left side */
+
+.titlebg {
+    padding: 10px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    width: 40vw;
+    top: 100px;
+}
+
+.title {
+    font: 4rem "odin", monospace;
+    font-size: 6rem;
+    color: white;
+}
+
+.credits {
+    color: white;
+    position: absolute;
+    left: 13vw;
+    bottom: 0px;
+    font-size: .9rem;
+}
+
+a:link,
+a:visited {
+    color: white;
+}
+
+
+
+/* right side */
+
+.rightside {
+    width: 60vw;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.paragraph {
+    margin-top: 10vh;
+    font-size: 1.4rem;
+    margin-left: 40px;
+    width: 50vw;
+}
+
+.paragraphtwo {
+    margin-top: 2vh;
+    margin-bottom: 8vh;
+    margin-left: 40px;
+    font-size: 1.4rem;
+}
+
+.paragraph,
+.paragraphtwo,
+.login,
+.form-title{
+    font-family: 'Roboto';
+}
+
+.login:link,
+.login:visited {
+    color: #598b2c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    height: 28px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #598b2c;
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-right: 50px;
+    font-weight: bold;
+    opacity: 100%;
+}
+
+.form{
+    box-shadow: 0 10px 10px -2px rgb(177, 176, 176);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding: 0 40px 40px 40px;
+}
+
+.form-title{
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+button {
+    background-color: #598b2c;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #596D48;
+}
+
+.submit {
+    margin: 25px 0 10px 40px;
+}
+
