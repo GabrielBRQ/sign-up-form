@@ -26,6 +26,15 @@ img{
 }
 /* left side */
 
+.forest {
+    width: 40vw;
+    height: 100vh;
+}
+
+.odin{
+    width: 7vw;
+}
+
 .titlebg {
     padding: 10px 0 10px 0;
     display: flex;
@@ -148,3 +157,56 @@ button:hover {
     margin: 25px 0 10px 40px;
 }
 
+@media only screen and (max-width: 600px)  {
+    body {
+        flex-direction: column;
+    }
+
+    .forest {
+        content: url("img/pexels-elias-tigiser-2757549.jpg");
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .odin {
+        height: 10vh;
+        width: auto;
+    }
+
+    .title{
+        font-size: 3.5rem;
+    }
+    .titlebg {
+        top: 25px;
+        width: 100vw;
+    }
+
+    .paragraph,
+    .paragraphtwo{
+        width: 80vw;
+    }
+
+    .form{
+        width: 100vw;
+    }
+    
+    .input{
+        margin-left: 20vw;
+    }
+
+    label {
+        margin-left: 15vw;
+    }
+
+    .form-title{
+        margin-left: 25vw;
+    }
+
+    button{
+        margin-left: 8vw;
+    }
+
+    .submit {
+        margin-left: 27vw;
+    }
+}
